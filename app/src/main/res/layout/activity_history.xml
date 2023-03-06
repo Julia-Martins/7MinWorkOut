@@ -18,4 +18,15 @@
         app:layout_constraintTop_toTopOf="parent"
     />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:text="AHHHHHHHHHHH"
+        android:textColor="@color/white"
+        android:scrollbarSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+    />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
