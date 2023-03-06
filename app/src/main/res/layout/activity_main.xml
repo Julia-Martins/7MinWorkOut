@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_screen_main_layout_padding"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:src="@drawable/wolf_removebg_preview"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+    />
+
+    <FrameLayout
+        android:id="@+id/btnStart"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_marginTop="30dp"
+
+        android:contentDescription="@string/img_desc"
+        android:background="@drawable/btn_start_border_clicked"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="START"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/default_btn_start_text_size"
+            android:textStyle="bold"
+        />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/btnBMI"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:contentDescription="@string/btnBMI"
+        android:background="@drawable/btn_start_border_bmi"
+
+        app:layout_constraintTop_toBottomOf="@+id/btnStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/imgIcon"
+        android:layout_marginStart="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="BMI"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textStyle="bold"
+        />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text="Calculator"
+        android:textColor="@color/blue_border"
+        android:textSize="21dp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/btnBMI"
+        app:layout_constraintEnd_toEndOf="@id/btnBMI"
+        app:layout_constraintTop_toBottomOf="@id/btnBMI"
+    />
+
+    <FrameLayout
+        android:id="@+id/btnHistory"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:contentDescription="@string/btnHistory"
+        android:background="@drawable/btn_start_border_bmi"
+
+        app:layout_constraintTop_toBottomOf="@+id/btnStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/imgIcon"
+        android:layout_marginEnd="30dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+
+            android:src="@drawable/history_removebg"
+            android:layout_gravity="center"
+        />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text="History"
+        android:textColor="@color/blue_border"
+        android:textSize="21dp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/btnHistory"
+        app:layout_constraintEnd_toEndOf="@id/btnHistory"
+        app:layout_constraintTop_toBottomOf="@id/btnHistory"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
