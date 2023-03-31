@@ -18,4 +18,51 @@
         app:layout_constraintTop_toTopOf="parent"
     />
 
+    <TextView
+        android:id="@+id/txtExerciseCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Exercise Completed"
+        android:textColor="@color/light_blue"
+        android:textSize="27dp"
+        android:textStyle="bold"
+
+        android:visibility="gone"
+        tools:visibility="visible"
+
+        android:gravity="center"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/toolHistory"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemsListHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+        tools:visibility="visible"
+
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@id/txtExerciseCompleted"
+    />
+
+    <TextView
+        android:id="@+id/txtNoRecordsAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="No records available"
+        android:textSize="21dp"
+        android:textColor="@color/back_blue"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:visibility="visible"
+
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolHistory"
+    />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
