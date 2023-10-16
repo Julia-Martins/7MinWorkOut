@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "973206122614",
+    "project_id": "minworkout-74a3e",
+    "storage_bucket": "minworkout-74a3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973206122614:android:ddd9142ec7e72b3abfaf57",
+        "android_client_info": {
+          "package_name": "com.example.a7minworkout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjSgWIf8TLzM2f7CB41MAsbnX8jhe8tsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
